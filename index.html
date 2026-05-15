@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura House - Home</title>
+    
+    <!-- Chamada correta do CSS a partir da raiz -->
+    <link rel="stylesheet" href="./src/css/estilo.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Sakura House</div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/portifolio.html">Portfólio</a></li>
+                <li><a href="pages/sobre.html">Sobre</a></li>
+                <li><a href="pages/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Experimente o verdadeiro sabor oriental</h1>
+
+                <p>
+                    Os melhores pratos japoneses preparados com tradição,
+                    qualidade e modernidade.
+                </p>
+
+                <!-- Adicionado evento para direcionar para a página do cardápio -->
+                <button onclick="window.location.href='pages/portifolio.html'">Ver Cardápio</button>
+            </div>
+        </section>
+
+        <section class="cards">
+
+            <div class="card">
+                <!-- Caminho ajustado para ./src/... -->
+                <img src="./src/assets/img/sushi.jpg" alt="Sushi">
+                <h2>Sushi Premium</h2>
+                <p>Combinação especial do chef.</p>
+            </div>
+
+            <div class="card">
+                <img src="./src/assets/img/yakisoba.jpg" alt="Yakisoba">
+                <h2>Yakisoba Especial</h2>
+                <p>Receita tradicional japonesa.</p>
+            </div>
+
+            <div class="card">
+                <img src="./src/assets/img/combo.jpg" alt="Combo">
+                <h2>Combo Família</h2>
+                <p>Ideal para compartilhar.</p>
+            </div>
+
+        </section>
+
+        <section class="diferenciais">
+            <h2>Nossos Diferenciais</h2>
+
+            <ul>
+                <li>Ingredientes frescos</li>
+                <li>Ambiente temático</li>
+                <li>Delivery rápido</li>
+                <li>Atendimento premium</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Telefone: (11) 99999-9999</p>
+        <p>Email: contato@sakurahouse.com</p>
+        <p>Instagram: @sakurahouse</p>
+        <p>© 2026 Sakura House</p>
+    </footer>
+
+    <!-- Chamada correta do JavaScript a partir da raiz -->
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
