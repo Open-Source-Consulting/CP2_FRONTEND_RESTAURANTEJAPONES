@@ -57,7 +57,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('../assets/img/banner.jpg');
+    background-image: url('../assets/banner.jpg');
     background-size: cover;
     background-position: center;
 }
