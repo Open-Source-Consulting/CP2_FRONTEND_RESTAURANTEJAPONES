@@ -1,0 +1,174 @@
+/* Importando a fonte moderna do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #0D0D0D;
+    color: #F2F2F2;
+}
+
+/* ── Header (Alinhado com o estilo global) ── */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #111;
+    border-bottom: 2px solid #C1121F;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    color: #C1121F;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #CCCCCC;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #C1121F;
+}
+
+/* ── Título da Página ── */
+.titulo-pagina {
+    text-align: center;
+    padding: 80px 20px 20px;
+}
+
+.titulo-pagina h1 {
+    font-size: 38px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.titulo-pagina p {
+    color: #C1121F;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* ── Seção Nossa História ── */
+.sobre {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 20px 40px;
+    text-align: center;
+    line-height: 1.8;
+    color: #BBBBBB;
+    font-size: 16px;
+}
+
+.sobre strong {
+    color: #FFFFFF;
+}
+
+/* ── Seção Missão, Visão e Valores ── */
+.missao-visao-valores {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px 20px 80px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #1A1A1A;
+    width: 300px;
+    padding: 35px 25px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #222;
+    border-top: 4px solid #C1121F;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+    border-color: #C1121F;
+}
+
+.card h2 {
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.card p {
+    color: #AAAAAA;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ── Footer (Alinhado com o estilo global) ── */
+footer {
+    background-color: #080808;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 3px solid #C1121F;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer p:last-child {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+/* ── Responsivo ── */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .titulo-pagina h1 {
+        font-size: 32px;
+    }
+
+    .sobre {
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    .missao-visao-valores {
+        flex-direction: column;
+        align-items: center;
+    }
+}
