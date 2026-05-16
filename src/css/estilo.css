@@ -10,10 +10,10 @@
 body {
     font-family: 'Poppins', Arial, sans-serif;
     background-color: #0D0D0D;
-    color: #F2F2F2; /* Branco levemente suavizado para não cansar a vista */
+    color: #F2F2F2; 
 }
 
-/* --- HEADER --- */
+/*  HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -50,7 +50,7 @@ nav a:hover {
     color: #C1121F;
 }
 
-/* --- HERO (Banner Principal) --- */
+/* HERO (Banner Principal) */
 .hero {
     height: 90vh;
     display: flex;
@@ -63,7 +63,7 @@ nav a:hover {
 }
 
 .hero-text {
-    background-color: rgba(13, 13, 13, 0.85); /* Fundo um pouco mais escuro para ler bem o texto */
+    background-color: rgba(13, 13, 13, 0.85); 
     padding: 50px;
     border-radius: 15px;
     max-width: 800px;
@@ -84,7 +84,7 @@ nav a:hover {
     line-height: 1.6;
 }
 
-/* --- BOTÕES GERAIS --- */
+/*  BOTÕES GERAIS  */
 button {
     background-color: #C1121F;
     color: white;
@@ -92,10 +92,10 @@ button {
     padding: 14px 32px;
     font-size: 16px;
     font-weight: 600;
-    border-radius: 50px; /* Formato em "pílula" moderno */
+    border-radius: 50px; 
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(193, 18, 31, 0.4); /* Efeito de brilho vermelho */
+    box-shadow: 0 4px 15px rgba(193, 18, 31, 0.4); 
 }
 
 button:hover {
@@ -104,7 +104,7 @@ button:hover {
     box-shadow: 0 6px 20px rgba(193, 18, 31, 0.6);
 }
 
-/* --- CARDS DE PRODUTOS --- */
+/*  CARDS DE PRODUTOS  */
 .cards {
     display: flex;
     justify-content: center;
@@ -126,7 +126,7 @@ button:hover {
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
-    border-color: #C1121F; /* Borda acende ao passar o mouse */
+    border-color: #C1121F; 
 }
 
 .card img {
@@ -148,7 +148,7 @@ button:hover {
     font-size: 15px;
 }
 
-/* --- DIFERENCIAIS --- */
+/*  DIFERENCIAIS  */
 .diferenciais {
     padding: 80px 20px;
     text-align: center;
@@ -179,7 +179,7 @@ button:hover {
     border: 1px solid #333;
 }
 
-/* --- TABELA DE PREÇOS (Estilo Geral) --- */
+/* TABELA DE PREÇOS (Estilo Geral)  */
 .tabela-precos {
     padding: 80px 20px;
     max-width: 900px;
@@ -191,7 +191,7 @@ table {
     border-collapse: collapse;
     background-color: #1A1A1A;
     border-radius: 10px;
-    overflow: hidden; /* Mantém os cantos arredondados */
+    overflow: hidden; 
 }
 
 th {
@@ -216,7 +216,7 @@ tr:last-child td {
     border-bottom: none;
 }
 
-/* --- FORMULÁRIO DE CONTATO (Padrão) --- */
+/* FORMULÁRIO DE CONTATO (Padrão)  */
 .contato {
     padding: 80px 20px;
     display: flex;
@@ -254,12 +254,12 @@ textarea:focus {
     border-color: #C1121F;
 }
 
-/* --- FOOTER --- */
+/*  FOOTER  */
 footer {
-    background-color: #080808; /* Fundo levemente mais escuro que o body */
+    background-color: #080808; 
     text-align: center;
     padding: 40px 20px;
-    margin-top: 0; /* Removido margin top solto, as seções empurram o footer naturalmente */
+    margin-top: 0; 
     border-top: 3px solid #C1121F;
     color: #777;
 }
@@ -274,7 +274,7 @@ footer p:last-child {
     font-size: 14px;
 }
 
-/* --- RESPONSIVIDADE (Mobile) --- */
+/*  RESPONSIVIDADE (Mobile)  */
 @media (max-width: 768px) {
     header {
         flex-direction: column;

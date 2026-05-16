@@ -13,7 +13,7 @@ body {
     color: #F2F2F2;
 }
 
-/* ── Header (Alinhado com o estilo global) ── */
+/* Header (Alinhado com o estilo global) */
 header {
     display: flex;
     justify-content: space-between;
@@ -50,7 +50,7 @@ nav a:hover {
     color: #C1121F;
 }
 
-/* ── Título da Página ── */
+/*  Título da Página  */
 .titulo-pagina {
     text-align: center;
     padding: 80px 20px 20px;
@@ -68,7 +68,7 @@ nav a:hover {
     font-size: 18px;
 }
 
-/* ── Seção Nossa História ── */
+/*  Seção Nossa História  */
 .sobre {
     max-width: 800px;
     margin: 0 auto;
@@ -83,7 +83,7 @@ nav a:hover {
     color: #FFFFFF;
 }
 
-/* ── Seção Missão, Visão e Valores ── */
+/* Seção Missão, Visão e Valores */
 .missao-visao-valores {
     display: flex;
     justify-content: center;
@@ -124,7 +124,7 @@ nav a:hover {
     line-height: 1.6;
 }
 
-/* ── Footer (Alinhado com o estilo global) ── */
+/* Footer (Alinhado com o estilo global)  */
 footer {
     background-color: #080808;
     text-align: center;
@@ -144,7 +144,7 @@ footer p:last-child {
     margin-top: 20px;
 }
 
-/* ── Responsivo ── */
+/*  Responsivo */
 @media (max-width: 768px) {
     header {
         flex-direction: column;

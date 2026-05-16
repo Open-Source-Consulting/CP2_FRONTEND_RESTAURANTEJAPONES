@@ -13,7 +13,7 @@ body {
     color: #F2F2F2;
 }
 
-/* ── Header (Alinhado com o estilo global) ── */
+/* Header (Alinhado com o estilo global) */
 header {
     display: flex;
     justify-content: space-between;
@@ -50,7 +50,7 @@ nav a:hover {
     color: #C1121F;
 }
 
-/* ── Título da Página ── */
+/* Título da Página  */
 .titulo-pagina {
     text-align: center;
     padding: 60px 20px 20px;
@@ -67,7 +67,7 @@ nav a:hover {
     font-size: 16px;
 }
 
-/* ── Cards do Cardápio ── */
+/* Cards do Cardápio  */
 .cards {
     display: flex;
     justify-content: center;
@@ -140,7 +140,7 @@ button:hover {
     box-shadow: 0 6px 20px rgba(193, 18, 31, 0.6);
 }
 
-/* ── Tabela de Preços e Promoções ── */
+/* Tabela de Preços e Promoções */
 .tabela-precos {
     padding: 60px 20px 80px;
     max-width: 900px;
@@ -192,7 +192,7 @@ tr:last-child td {
     border-bottom: none;
 }
 
-/* ── Footer ── */
+/* Footer  */
 footer {
     background-color: #080808;
     text-align: center;
@@ -212,7 +212,7 @@ footer p:last-child {
     margin-top: 20px;
 }
 
-/* ── Responsivo ── */
+/* Responsivo */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
