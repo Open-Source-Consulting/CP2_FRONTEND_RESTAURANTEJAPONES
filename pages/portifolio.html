@@ -26,7 +26,11 @@
 
         <section class="titulo-pagina" style="text-align: center; padding: 40px 20px;">
             <h1>Nosso Cardápio & Especialidades</h1>
-            <p style="color: #aaa; margin-top: 10px;">Descubra as verdadeiras obras de arte criadas pelos nossos chefs.</p>
+            <p style="color: #aaa; margin-top: 10px; margin-bottom: 20px;">Descubra as verdadeiras obras de arte criadas pelos nossos chefs.</p>
+            
+            <button id="btn-carrinho" onclick="fecharPedido()" style="font-size: 18px; max-width: 400px; margin: 0 auto; display: block;">
+                🛒 Ver Carrinho (0 itens) - R$ 0.00
+            </button>
         </section>
 
         <section class="cards">
@@ -36,7 +40,7 @@
                 <h2>Sushi Tradicional</h2>
                 <p style="color: #aaa; font-size: 14px; margin: 10px 0;">Porção com 12 unidades variadas.</p>
                 <p style="font-size: 20px; font-weight: bold; color: #C1121F;">R$ 39,90</p>
-                <button style="margin-top: 15px; width: 100%;">Adicionar</button>
+                <button onclick="adicionarAoCarrinho('Sushi Tradicional', 39.90)" style="margin-top: 15px; width: 100%;">Adicionar</button>
             </div>
 
             <div class="card">
@@ -44,7 +48,7 @@
                 <h2>Temaki Especial</h2>
                 <p style="color: #aaa; font-size: 14px; margin: 10px 0;">Salmão em cubos, cream cheese e cebolinha.</p>
                 <p style="font-size: 20px; font-weight: bold; color: #C1121F;">R$ 29,90</p>
-                <button style="margin-top: 15px; width: 100%;">Adicionar</button>
+                <button onclick="adicionarAoCarrinho('Temaki Especial', 29.90)" style="margin-top: 15px; width: 100%;">Adicionar</button>
             </div>
 
             <div class="card">
@@ -52,7 +56,7 @@
                 <h2>Combo Premium</h2>
                 <p style="color: #aaa; font-size: 14px; margin: 10px 0;">Seleção do chef com 40 peças espetaculares.</p>
                 <p style="font-size: 20px; font-weight: bold; color: #C1121F;">R$ 89,90</p>
-                <button style="margin-top: 15px; width: 100%;">Adicionar</button>
+                <button onclick="adicionarAoCarrinho('Combo Premium', 89.90)" style="margin-top: 15px; width: 100%;">Adicionar</button>
             </div>
 
         </section>
