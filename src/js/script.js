@@ -1,60 +1,54 @@
 // Variáveis Globais
 let totalDeItens = 0;
 let valorTotal = 0;
-let listaDePratos = ""; // Variável de texto vazia que vai acumular os pedidos
+let listaDePratos = ""; 
 
-// 1. Função para adicionar ao carrinho
+// Função para adicionar ao carrinho
 function adicionarAoCarrinho(nomeDoPrato, precoDoPrato) {
     let resposta = prompt("Quantas porções de " + nomeDoPrato + " você deseja?");
-    
+
     if (resposta == null) {
-        return; 
+        return;
     }
 
     let quantidade = parseInt(resposta);
 
+    // Validação usando WHILE
     while (isNaN(quantidade) || quantidade <= 0) {
         resposta = prompt("Valor inválido! Digite um número maior que zero:");
         if (resposta == null) {
-            return; 
+            return;
         }
         quantidade = parseInt(resposta);
     }
 
     const subtotal = precoDoPrato * quantidade;
-    
-    // Atualiza a matemática
+
     totalDeItens = totalDeItens + quantidade;
     valorTotal = valorTotal + subtotal;
 
-    // CONCATENAÇÃO: Adiciona o texto do prato na nossa lista
     listaDePratos = listaDePratos + quantidade + "x " + nomeDoPrato + " ..... R$ " + subtotal.toFixed(2) + "\n";
 
     alert(quantidade + "x " + nomeDoPrato + " adicionado ao carrinho!");
 
-    // Chama a função para atualizar o texto do botão na tela
     atualizarBotaoCarrinho();
 }
 
-// 2. Função para mostrar o resumo e fechar pedido
 function fecharPedido() {
     if (totalDeItens == 0) {
         alert("Seu carrinho está vazio. Adicione algum prato primeiro!");
     } else {
-        // Monta a mensagem completa juntando os textos
         let mensagem = "🥢 RESUMO DO PEDIDO 🥢\n\n";
         mensagem = mensagem + listaDePratos;
         mensagem = mensagem + "\n=======================";
         mensagem = mensagem + "\nTOTAL A PAGAR: R$ " + valorTotal.toFixed(2);
         mensagem = mensagem + "\n=======================\n\nDeseja finalizar esta compra?";
 
-        // confirm() é uma função nativa simples que retorna true (OK) ou false (Cancelar)
+
         let confirmacao = confirm(mensagem);
 
         if (confirmacao == true) {
             alert("🎉 Pedido finalizado com sucesso! O Sakura House agradece.");
-            
-            // Limpa tudo (Zera o carrinho)
             totalDeItens = 0;
             valorTotal = 0;
             listaDePratos = "";
@@ -63,7 +57,6 @@ function fecharPedido() {
     }
 }
 
-// 3. Função para atualizar o número no botão do HTML
 function atualizarBotaoCarrinho() {
     const botao = document.getElementById("btn-carrinho");
     if (botao != null) {
@@ -71,7 +64,6 @@ function atualizarBotaoCarrinho() {
     }
 }
 
-// 4. Validação do formulário (mantida como você aprendeu)
 function validarFormulario() {
     const nome = document.getElementById("nome").value;
     const email = document.getElementById("email").value;
